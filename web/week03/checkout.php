@@ -3,11 +3,6 @@ session_start();
 ?>
 
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <meta charset="UTF-8">
@@ -19,7 +14,7 @@ and open the template in the editor.
     <body>
         <div id="container">
             <header>
-                <h1>Meldanen's Mystic Emporium</h1>
+                <h1>Moroni Store</h1>
                 <a href="viewCart.php">View Cart</a>
             </header>
 

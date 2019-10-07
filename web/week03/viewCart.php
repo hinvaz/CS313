@@ -20,7 +20,7 @@ and open the template in the editor.
     <body>
         <div id="container">
             <header>
-                <h1>Meldanen's Mystic Emporium</h1>
+                <h1>Moroni Store</h1>
                 <a href="home.php">Browse Items</a>
             </header>
 

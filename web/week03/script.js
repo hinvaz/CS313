@@ -1,10 +1,8 @@
 itemDescrips = [
-    "This potion's red liquid glimmers when agitated. Drink to speed up the body's natural healing mechanisms.",
-    "This potion's rose-hued, effervescent liquid contains one easy-to-miss bubble shaped like a heart. The first person you see within 10 minutes after drinking this philter, you become infatiuated with for 1 hour.",
-    "The dust turns a cube of water 15 feet on a side into one marble-sized pellet. You can smash the pellet against a hard surface, causing the pellet to shatter and release the water the dust absorbed. Doing so ends that pellet's magic.",
-    "When you drink this potion, it cures any disease afflicting you. The clear red liquid has tiny bubbles of light in it.",
-    "These pigments allow you to create three-dimensional objects by painting them in two dimensions. The paint flows from the brush to form the desired object as you concentrate on its image.",
-    "This viscous, milky-white substance can form a permanent adhesive bond between any two objects. The glue takes 1 minute to set. Once it has done so, the bond it creates can be broken only by the application of Universal Solvent"
+    "When Nephi encountered the unconscious Laban, he noticed that Laban was wearing a fine sword made of precious steel with a hilt of pure gold.",
+    "The golden plates are the source from which Joseph Smith translated the Book of Mormon, a sacred text of the faith.",
+    "The Liahona is a brass ball that operates as a type of compass with two spindles.",
+    "Two objects of a now unknown nature, possibly used for divination, worn on the breastplate of a Jewish high priest.",
 ];
 
 function addToCart(item, price) {
