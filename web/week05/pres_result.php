@@ -38,7 +38,7 @@ include('includes/config.php');
 </div>
 <div id="menu">
 	<ul>
-		<li> <a href="index.php"> |  Home  |</a></li>
+		<li> <a href="home.php"> |  Home  |</a></li>
 		<li>
 		  <a href="login.php">|  Voting  |</a></li>
 		<li>
@@ -50,7 +50,7 @@ include('includes/config.php');
 <div id="content">
 	<div id="left">
     <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">
-    THIS E-VOTING SYSTEMIS FOR ELEGIBLE NIGERIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2012 
+    THIS E-VOTING SYSTEM IS FOR CS313
     </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>

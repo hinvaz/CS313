@@ -1,17 +1,37 @@
 <?php
 
-$host="localhost"; // Host name
-$username="root"; // Mysql username
-$password=""; // Mysql password
-$db_name="evoting"; // Database name
-
+function get_db() {
+	$db = NULL;
+	try {
+		// default Heroku Postgres configuration URL
+		$dbUrl = getenv('DATABASE_URL');
+		// Get the various parts of the DB Connection from the URL
+		$dbOpts = parse_url($dbUrl);
+		$dbHost = $dbOpts["host"];
+		$dbPort = $dbOpts["port"];
+		$dbUser = $dbOpts["user"];
+		$dbPassword = $dbOpts["pass"];
+		$dbName = ltrim($dbOpts["path"],'/');
+		// Create the PDO connection
+		$db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+		// this line makes PDO give us an exception when there are problems, and can be very helpful in debugging!
+		$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+	}
+	catch (PDOException $ex) {
+		// If this were in production, you would not want to echo
+		// the details of the exception.
+		echo "Error connecting to DB. Details: $ex";
+		die();
+	}
+	return $db;
+}
 
 //anpp
 if(isset($_POST['Submit'])) {
 
 // Connect to server and select databse.
-mysql_connect("$host", "$username", "$password")or die("cannot connect");
-mysql_select_db("$db_name")or die("cannot select DB");
+mysql_connect("$dbhost", "$dbUser", "$dbPassword")or die("cannot connect");
+mysql_select_db("$dbName")or die("cannot select DB");
 
 
  //$e_id ="inec/ 396" ;
@@ -127,7 +147,7 @@ else {return false;
 </div>
 <div id="menu">
 	<ul>
-		<li> <a href="index.php"> |  Home  |</a></li>
+		<li> <a href="home.php"> |  Home  |</a></li>
 		<li>
 		  <a href="login.php">|  Voting  |</a></li>
 		<li>
@@ -141,7 +161,7 @@ else {return false;
 <div id="content">
 	<div id="left">
     <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">
-    THIS VOTING SYSTEM IS FOR ELEGIBLE NIGERIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2012 
+    THIS VOTING SYSTEM IS FOR CS313
     </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>

@@ -43,7 +43,7 @@ exit;}
 </div>
 <div id="menu">
 	<ul>
-		<li> <a href="index.php"> |  Home  |</a></li>
+		<li> <a href="home.php"> |  Home  |</a></li>
 		<li>
 		  <a href="login.php">|  Voting  |</a></li>
 		<li>
