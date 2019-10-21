@@ -54,7 +54,6 @@
     </table>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>Copyright &copy; 2018 Mustapha Garba</a></p>
 </div>
 </body>
 </html>

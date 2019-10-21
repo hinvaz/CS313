@@ -173,7 +173,6 @@ $collect = insert($_POST);
   </table>
   <p>&nbsp;</p>
 	<p>&nbsp;</p>
-	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
 </div>
 </body>
 </html>

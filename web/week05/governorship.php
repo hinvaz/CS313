@@ -176,7 +176,6 @@ else
       </table>
   </form>
 	<p>&nbsp;</p>
-	<p align="center">Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
 </div>
 </body>
 </html>

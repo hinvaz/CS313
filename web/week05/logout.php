@@ -41,8 +41,6 @@ if(session_destroy())
 		  <a href="result.php">|  Result  |</a></li>
 		<li>
 		  <a href="login.php" >|  Login  |</a></li>
-		<li>
-		  <a href="contact.php">|  Contact Us  |</a></li>
 	</ul>
 </div>
 <div id="content">
@@ -61,7 +59,6 @@ if(session_destroy())
   <p class="style1">YOU HAVE SUCCESSFULLY LOGGED OUT</p>
   <p class="style1">THANKS </p>
   <p class="style1"><a href="index.php"><img src="images/cooltext457951615.png" alt="" width="86" height="43" /></a></p>
-  <p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
 </div>
 </body>
 </html>

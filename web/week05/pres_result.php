@@ -45,8 +45,6 @@ include('includes/config.php');
 		  <a href="pres_result.php">|  Result  |</a></li>
 		<li>
 		  <a href="login.php" >|  Login  |</a></li>
-		<li>
-		  <a href="contact.php">|  Contact Us  |</a></li>
 	</ul>
 </div>
 <div id="content">
@@ -86,7 +84,6 @@ include('includes/config.php');
       <?php  } 
 	  ?>
   </table>
-	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
 </div>
 </body>
 </html>
