@@ -48,8 +48,6 @@ exit;}
 		<li>
 		  <a href="login.php">|  Voting  |</a></li>
 		<li>
-		  <a href="pres_result.php">|  Result  |</a></li>
-		<li>
 		  <a href="login.php" >|  Login  |</a></li>
 	</ul>
 </div>

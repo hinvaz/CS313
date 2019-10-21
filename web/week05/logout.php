@@ -38,8 +38,6 @@ if(session_destroy())
 		<li>
 		  <a href="login.php">|  Voting  |</a></li>
 		<li>
-		  <a href="result.php">|  Result  |</a></li>
-		<li>
 		  <a href="login.php" >|  Login  |</a></li>
 	</ul>
 </div>
