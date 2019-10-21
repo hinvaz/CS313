@@ -46,15 +46,13 @@ $collect = insert($_POST);
 		<li>
 		  <a href="login.php">|  Voting  |</a></li>
 		<li>
-		  <a href="result.php">|  Result  |</a></li>
-		<li>
 		  <a href="login.php" >|  Login  |</a></li>
 
 	</ul>
 </div>
 <div id="content">
 	<div id="left">
-    <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">THIS REGISTRATION FORM IS FOR CS313 CLASS </marquee></strong></p>
+    <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">THIS IS REGISTRATION PAGE </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>
    </center>
