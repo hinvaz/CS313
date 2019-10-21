@@ -16,6 +16,7 @@ session_start();
 <body>
 <header>
 <h1>Login</h1>
+<h2>Home</h2>
 <hr>
 </header>
 <main class="login">

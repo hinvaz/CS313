@@ -12,7 +12,7 @@ $db = dbConnect();
 
 <head>
 <meta charset="utf-8">
-<title>"Social Media"</title>
+<title>Post a Comment</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="main.css">
 
@@ -20,7 +20,7 @@ $db = dbConnect();
 
 <body>
 <header>
-<h1>"Social Media"</h1>
+<h1>Post a Comment</h1>
 <hr>
     <nav>
         <?php
