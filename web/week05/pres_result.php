@@ -1,14 +1,14 @@
-<?php 
-include('includes/config.php');
-$collect='';
-if($_POST){
-$collect = login($_POST);
-if($collect == 'you have successfully login'){
-header("location: choose_election.php");
-exit;}
+<?php
+// Check if session is not registered , redirect back to main page.
+// Put this code in first line of web page.
+session_start();
+if(!session_is_registered(txtusername)){
+header("location:login.php");
 }
- ?>
-
+?>
+<?php
+include('includes/config.php');
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,11 +24,6 @@ exit;}
 	color: #000000;
 	font-weight: bold;
 	font-size: 16px;
-}
-.style7 {font-size: 16px; font-weight: bold; }
-.style8 {color: #000000; font-weight: bold; font-size: 18px; }
-.style3 {	color: #FF0000;
-	font-weight: bold;
 }
 -->
 </style>
@@ -67,39 +62,30 @@ exit;}
 </div>
 </div>
 <div id="footer">
-  <p class="style8">LOGIN CONSOLE </p>
-	<table width="371" height="177" border="1" align="center" bgcolor="#99CCFF">
+  <p class="style1"><a href="logout.php">LOGOUT</a></p>
+  <p class="style1">UPDATED PRESIDENTIAL RESULT </p>
+  <table width="743" height="93" border="1" align="center" cellpadding="7" cellspacing="0" bgcolor="#999999">
       <tr>
-        <td width="361" height="32"><table width="200" align="center" bgcolor="#CCCCCC">
-            <tr>
-              <td height="29"><div align="center"><span class="style3">LOGIN CONSOLE </span></div></td>
-            </tr>
-        </table></td>
+        <th width="263" height="56" scope="col" >CANDIDATE NAME </th>
+        <th width="215" scope="col" >PARTY</th>
+        <th width="215" scope="col" >VOTES</th>
       </tr>
+      <?php 
+ $row = get_pres_vote();
+ foreach($row as $col_val){
+  $sno++;
+ if(($sno%2)==0)$format="background-color:#cccccc";
+ else $format="background-color:#00FF66";
+ 
+?>
       <tr>
-        <td height="130"><form id="form1" method="post" action="">
-            <table width="313" align="center">
-              <tr>
-                <td width="96"><span class="style3">USERNAME</span></td>
-                <td width="205"><label>
-                  <input type="text" name="txtusername" />
-                </label></td>
-              </tr>
-              <tr>
-                <td height="30"><span class="style3">PASSWORD</span></td>
-                <td><input type="password" name="txtelectionid" /></td>
-              </tr>
-              <tr>
-                <td height="41"><label>
-                  <input type="submit" name="Submit" value="Submit" />
-                </label></td>
-                <td><input type="reset" name="Submit2" value="Reset" /></td>
-              </tr>
-            </table>
-        </form></td>
+        <td  style="<?php echo $format; ?>"><?php echo $col_val['cand_name'] ?></td>
+        <td  style="<?php echo $format; ?>"><?php echo $col_val['party'] ; ?></td>
+        <td  style="<?php echo $format; ?>"><?php echo $col_val['pres_count'] ; ?> </td>
       </tr>
-    </table>
-	<p>&nbsp;</p>
+      <?php  } 
+	  ?>
+  </table>
 	<p>Copyright &copy; 2011 Designed by "Ndueso Walter FOR LEASTPAY SOLUTIONS LTD" FOR 08067361023</a></p>
 </div>
 </body>
