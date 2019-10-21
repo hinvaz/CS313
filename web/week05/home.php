@@ -36,8 +36,6 @@
 		  <a href="pres_result.php">|  Result  |</a></li>
 		<li>
 		  <a href="login.php" >|  Login  |</a></li>
-		<li>
-		  <a href="contact.php">|  Contact Us  |</a></li>
 	</ul>
 </div>
 <div id="content">
