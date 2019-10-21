@@ -28,12 +28,11 @@
 <div id="menu">
 	<ul>
 		<li> <a href="home.php"> |  Home  |</a></li>
-		<li>
-		  <a href="choose_election.php">|  Voting  |</a></li>
+		/* <li>
+		  <a href="choose_election.php">|  Voting  |</a></li> */
 		<li>
 		  <a href="registration.php">|  Registration  |</a></li>
-		<li>
-		  <a href="pres_result.php">|  Result  |</a></li>
+	
 		<li>
 		  <a href="login.php" >|  Login  |</a></li>
 	</ul>

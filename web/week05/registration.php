@@ -55,7 +55,7 @@ $collect = insert($_POST);
 </div>
 <div id="content">
 	<div id="left">
-    <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">THIS REISTRATION FORM IS FOR ELEGIBLE NIGERIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2012 </marquee></strong></p>
+    <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">THIS REGISTRATION FORM IS FOR CS313 CLASS </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>
    </center>

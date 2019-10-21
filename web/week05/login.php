@@ -55,7 +55,7 @@ exit;}
 <div id="content">
 	<div id="left">
     <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">
-    THIS E-VOTING SYSTEMIS FOR CS313 CLASS 
+    THIS E-VOTING SYSTEM IS FOR CS313 CLASS 
     </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>
