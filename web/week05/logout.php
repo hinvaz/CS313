@@ -28,7 +28,7 @@ if(session_destroy())
 <div id="header">
   <table width="200" align="center">
     <tr>
-      <td height="212"><img src="images/header1.jpg" alt="" width="770" height="210" /></td>
+      <td height="212"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOTLToxdMty7hND1kulM0hjWRW2Wq-QKDJZ51grxAiHtP4wo1" alt="" width="770" height="210" /></td>
     </tr>
   </table>
 </div>
