@@ -9,9 +9,8 @@ header("location:login.php");
 <?php
 include('includes/config.php');
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>|| VOTING REGISTRATION SYSTEM||</title>
@@ -32,7 +31,7 @@ include('includes/config.php');
 <div id="header">
   <table width="200" align="center">
     <tr>
-      <td height="212"><img src="images/header1.jpg" alt="" width="770" height="210" /></td>
+      <td height="212"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyOTLToxdMty7hND1kulM0hjWRW2Wq-QKDJZ51grxAiHtP4wo1" alt="" width="770" height="210" /></td>
     </tr>
   </table>
 </div>

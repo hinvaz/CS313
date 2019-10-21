@@ -47,8 +47,8 @@ if(session_destroy())
 </div>
 <div id="content">
 	<div id="left">
-    <p style="text-align:center; color:#FF0000;"><strong><marquee  behavior="scroll">
-    THIS E-VOTING SYSTEMIS FOR ELEGIBLE NIGERIAN WHO ARE ABOVE 18 YEARS OF AGE AS FROM 23RD JUNE 2012 
+    <p style="text-align:center; color:#FF1000;"><strong><marquee  behavior="scroll">
+    THIS E-VOTING SYSTEM IS FOR CS313 CLASS 
     </marquee></strong></p>
 </div>
   <th height="41" colspan="2" scope="col"><h1><center>
