@@ -18,7 +18,7 @@ CREATE TABLE "presidential_votes" (
 	name VARCHAR(80) NOT NULL,
 	party VARCHAR(80),
 	pres_count VARCHAR (80),
-	vote_date DATE NOT NULL DEFAULT CURRENT_DATE,
+	vote_date VARCHAR (300)
 );
 
 
@@ -32,22 +32,22 @@ INSERT INTO "presidential_votes" (name, party, pres_count, vote_date) VALUES
 
 -- table `voter`
 
-CREATE TABLE voter (
-  firstname varchar(19) NOT NULL,
-  lastname varchar(19) NOT NULL,
-  sex varchar(5) NOT NULL,
-  age varchar(3) NOT NULL,
-  address varchar(23) NOT NULL,
-  lga varchar(19) NOT NULL,
-  state varchar(19) NOT NULL,
-  country varchar(19) NOT NULL,
-  phone varchar(18) NOT NULL,
-  email varchar(19) NOT NULL,
-  election_district varchar(18) NOT NULL,
-  occupation varchar(19) NOT NULL,
-  username varchar(22) NOT NULL,
-  election_id varchar(22) NOT NULL,
-  PRIMARY KEY  (election_id
+CREATE TABLE "voter" (
+  firstname    VARCHAR(19) NOT NULL,
+  lastname     VARCHAR(19) NOT NULL,
+  sex          VARCHAR(5)  NOT NULL,
+  age          VARCHAR(3)  NOT NULL,
+  address      VARCHAR(23) NOT NULL,
+  lga          VARCHAR(19) NOT NULL,
+  state        VARCHAR(19) NOT NULL,
+  country      VARCHAR(19) NOT NULL,
+  phone        VARCHAR(18) NOT NULL,
+  email        VARCHAR(19) NOT NULL,
+  election_district VARCHAR(18) NOT NULL,
+  occupation        VARCHAR(19) NOT NULL,
+  username          VARCHAR(22) NOT NULL,
+  election_id       VARCHAR(22) NOT NULL,
+  PRIMARY KEY (election_id)
   );
 
 -- 
