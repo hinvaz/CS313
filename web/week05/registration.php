@@ -163,7 +163,7 @@ $collect = insert($_POST);
                 <td><input type="text" name="txtelectionid" value="<?php  print rand(1, 1000000)._ID; ?> "/></td>
               </tr>
               <tr>
-                <td><input type="submit" name="Submit" value="Registered" /></td>
+                <td><input type="submit" name="Submit" value="Submit" /></td>
                 <td>&nbsp;</td>
               </tr>
             </table>

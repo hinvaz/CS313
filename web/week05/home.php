@@ -2,10 +2,7 @@
 <html lang="en-us">
 
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>VOTING SYSTEM |</title>
-<meta name="keywords" content="" />
-<meta name="description" content="" />
+<title>VOTING SYSTEM | CS313 </title>
 <link href="default.css" rel="stylesheet" type="text/css" />
 <style type="text/css">
 <!--
@@ -28,8 +25,7 @@
 <div id="menu">
 	<ul>
 		<li> <a href="home.php"> |  Home  |</a></li>
-		 /* <li>*/
-		 /* <a href="choose_election.php">|  Voting  |</a></li> */ 
+		 /* <li><a href="choose_election.php">|  Voting  |</a></li>  */
 		<li>
 		  <a href="registration.php">|  Registration  |</a></li>
 	
