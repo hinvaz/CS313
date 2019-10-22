@@ -6,8 +6,7 @@
 
 <body>
 <div id="back">
-	<?php include 'navegation.php'; ?>
-
+	<?php include 'navbar.php'; ?>
 	
 	<?php
 	include 'db_access.php';
