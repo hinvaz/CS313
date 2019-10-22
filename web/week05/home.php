@@ -8,7 +8,6 @@
 <div id="back">
 	<?php include 'navegation.php'; ?>
 
-	<h2>Index</h2>
 	
 	<?php
 	include 'db_access.php';

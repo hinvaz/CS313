@@ -1,6 +1,7 @@
 body {
 	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWtHQW2W62BqfL0VM8WfBscAjMCQm6pGCNIYSV1P5Xdhy5X9bZdg");
 	text-align: center;
+	cover: no-repeat; 
 }
 
 h1, h2, h3, h4, p, li a {
