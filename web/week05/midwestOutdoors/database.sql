@@ -27,15 +27,6 @@ CREATE TABLE picture (
 	FOREIGN KEY (restaurant_id) REFERENCES restaurant(id)
 );
 
--- CREATE TABLE rating (
--- 	id SERIAL NOT NULL PRIMARY KEY,
--- 	reviewer_name VARCHAR(80) NOT NULL,
--- 	rating INTEGER NOT NULL,
--- 	description VARCHAR(200),
--- 	restaurant_id INTEGER,
--- 	FOREIGN KEY (restaurant_id) REFERENCES restaurant(id)
--- );
-
 INSERT INTO state (id, name) VALUES (DEFAULT, 'Utah');
 INSERT INTO state (id, name) VALUES (DEFAULT, 'Idaho');
 
