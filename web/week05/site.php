@@ -21,7 +21,7 @@ $selected = array ();
 <body>
 <div id="back">
 	<?php 
-	include 'navbar.php';
+	include 'navegation.php';
 	
 	$stmt = $db->prepare("SELECT url FROM picture WHERE restaurant_id=:restaurantId");
 	$stmt->bindValue(':restaurantId', $restaurantId, PDO::PARAM_STR);
