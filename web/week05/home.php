@@ -12,9 +12,9 @@
 	<?php
 	include 'db_access.php';
 		
-	foreach ($db->query("SELECT * FROM state") as $state_row) {
-		echo "<h3>" . $state_row["name"] . "</h3>";
-		$stateId = $state_row["id"];
+	foreach ($db->query("SELECT * FROM state") as $row) {
+		echo "<h3>" . $row["name"] . "</h3>";
+		$stateId = $row["id"];
 			
 		foreach ($db->query("SELECT * FROM city WHERE state_id=$stateId") as $state_st) {
 			echo "<h4>" . $state_st["name"] . "</h4>";
