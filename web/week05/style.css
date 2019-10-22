@@ -35,7 +35,7 @@ div.separate {
 	background-color: rgb(200, 0, 0);
 }
 
-ul.nav {
+ul.navegation {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -43,11 +43,11 @@ ul.nav {
 	background: rgba(215, 215, 215, 0.92);
 }
 
-li.nav {
+li.navegation {
     float: left;
 }
 
-li a.nav {
+li a.navegation {
     display: block;
     text-align: center;
     padding: 14px 16px;

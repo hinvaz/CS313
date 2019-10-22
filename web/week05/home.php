@@ -6,7 +6,7 @@
 
 <body>
 <div id="back">
-	<?php include 'navbar.php'; ?>
+	<?php include 'navegation.php'; ?>
 
 	<h2>Index</h2>
 	
