@@ -20,9 +20,9 @@
 			echo "<ul>";
 			$countyId = $state_st["id"];
 				
-			foreach ($db->query("SELECT * FROM restaurant WHERE city_id=$countyId") as $site_row) {
-				$siteId = $site_row["id"];
-				echo "<li><a href='site.php?siteId=$siteId'>" . $site_row["name"] . "</a></li>";
+			foreach ($db->query("SELECT * FROM restaurant WHERE city_id=$countyId") as $restaurant_row) {
+				$siteId = $restaurant_row["id"];
+				echo "<li><a href='site.php?siteId=$siteId'>" . $restaurant_row["name"] . "</a></li>";
 			}
 				
 			echo "</ul>";
