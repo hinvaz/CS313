@@ -18,11 +18,11 @@
 		foreach ($db->query("SELECT * FROM city WHERE state_id=$stateId") as $state_st) {
 			echo "<h4>" . $state_st["name"] . "</h4>";
 			echo "<ul>";
-			$countyId = $state_st["id"];
+			$cityId = $state_st["id"];
 				
-			foreach ($db->query("SELECT * FROM restaurant WHERE city_id=$countyId") as $restaurant_row) {
-				$siteId = $restaurant_row["id"];
-				echo "<li><a href='site.php?siteId=$siteId'>" . $restaurant_row["name"] . "</a></li>";
+			foreach ($db->query("SELECT * FROM restaurant WHERE city_id=$cityId") as $restaurant_row) {
+				$restaurantId = $restaurant_row["id"];
+				echo "<li><a href='site.php?restaurantId=$restaurantId'>" . $restaurant_row["name"] . "</a></li>";
 			}
 				
 			echo "</ul>";

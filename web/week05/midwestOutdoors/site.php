@@ -2,9 +2,9 @@
 session_start();
 
 include 'db_access.php';
-$siteId = $_GET["siteId"];
+$restaurantId = $_GET["restaurantId"];
 
-if (!isset($siteId)) {
+if (!isset($restaurantId)) {
 	die("No site ID.");
 }
 
@@ -23,8 +23,8 @@ $selected = array ();
 	<?php 
 	include 'navbar.php';
 	
-	$stmt = $db->prepare("SELECT url FROM picture WHERE restaurant_id=:siteId");
-	$stmt->bindValue(':siteId', $siteId, PDO::PARAM_STR);
+	$stmt = $db->prepare("SELECT url FROM picture WHERE restaurant_id=:restaurantId");
+	$stmt->bindValue(':restaurantId', $restaurantId, PDO::PARAM_STR);
 	$stmt->execute();
 	$stmt->bindColumn(1, $url);
 	
@@ -32,8 +32,8 @@ $selected = array ();
 		echo "<img src='" . $url . "'>";
 	}
 
-	$stmt = $db->prepare("SELECT name, address, description FROM restaurant WHERE id=:siteId");
-	$stmt->bindValue(':siteId', $siteId, PDO::PARAM_STR);
+	$stmt = $db->prepare("SELECT name, address, description FROM restaurant WHERE id=:restaurantId");
+	$stmt->bindValue(':restaurantId', $restaurantId, PDO::PARAM_STR);
 	$stmt->execute();
 	$stmt->bindColumn(1, $name);
 	$stmt->bindColumn(2, $address);
